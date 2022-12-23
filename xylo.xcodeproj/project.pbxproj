@@ -92,6 +92,7 @@
 		CA0192E1295524E300499A7D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA492562294BDB54008D3DBC /* ContentView.swift */,
 				CA0192E32955268200499A7D /* WelcomeScreen.swift */,
 			);
 			path = Screens;
@@ -139,7 +140,6 @@
 				CA0192EB2955350300499A7D /* Resources */,
 				CA0192E0295524D000499A7D /* UI */,
 				CA492560294BDB54008D3DBC /* xyloApp.swift */,
-				CA492562294BDB54008D3DBC /* ContentView.swift */,
 				CA492569294BDB55008D3DBC /* Persistence.swift */,
 				CA49256B294BDB55008D3DBC /* xylo.xcdatamodeld */,
 				CA492566294BDB55008D3DBC /* Preview Content */,
@@ -306,7 +306,6 @@
 			files = (
 				CA49256A294BDB55008D3DBC /* Persistence.swift in Sources */,
 				CA49256D294BDB55008D3DBC /* xylo.xcdatamodeld in Sources */,
-
 				CA0192E42955268200499A7D /* WelcomeScreen.swift in Sources */,
 				CA492563294BDB54008D3DBC /* ContentView.swift in Sources */,
 				CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */,
