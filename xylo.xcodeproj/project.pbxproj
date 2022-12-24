@@ -11,6 +11,7 @@
 		CA0192E72955342700499A7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA0192E92955342700499A7D /* Localizable.strings */; };
 		CA0192F529567AF800499A7D /* JoinFriendsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0192F429567AF800499A7D /* JoinFriendsScreen.swift */; };
 		CA0192F729567B1400499A7D /* CreateGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0192F629567B1400499A7D /* CreateGameScreen.swift */; };
+		CA2A895129574F2500CC5DA4 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = CA2A895029574F2500CC5DA4 /* SocketIO */; };
 		CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492560294BDB54008D3DBC /* xyloApp.swift */; };
 		CA492563294BDB54008D3DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492562294BDB54008D3DBC /* ContentView.swift */; };
 		CA492565294BDB55008D3DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA492564294BDB55008D3DBC /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2A895129574F2500CC5DA4 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +196,9 @@
 			dependencies = (
 			);
 			name = xylo;
+			packageProductDependencies = (
+				CA2A895029574F2500CC5DA4 /* SocketIO */,
+			);
 			productName = xylo;
 			productReference = CA49255D294BDB54008D3DBC /* xylo.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +272,9 @@
 				es,
 			);
 			mainGroup = CA492554294BDB54008D3DBC;
+			packageReferences = (
+				CA2A894F29574F2500CC5DA4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = CA49255E294BDB54008D3DBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -653,6 +661,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA2A894F29574F2500CC5DA4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA2A895029574F2500CC5DA4 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA2A894F29574F2500CC5DA4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CA49256B294BDB55008D3DBC /* xylo.xcdatamodeld */ = {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeScreen: View {
+    
     var body: some View {
         NavigationView {
             self.content
@@ -22,6 +23,7 @@ struct WelcomeScreen: View {
 private extension WelcomeScreen {
     
     func contentView() -> some View {
+        
         VStack {
             Spacer()
             TitleText()
@@ -59,7 +61,7 @@ private extension WelcomeScreen {
     }
     
     private struct CreateGameButton: View {
-                
+
         var body: some View {
             NavigationLink(destination: CreateGameScreen()) {
                 Text(LocalizedStringKey("create_game"))
