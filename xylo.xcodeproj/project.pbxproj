@@ -12,6 +12,7 @@
 		CA0192F529567AF800499A7D /* JoinFriendsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0192F429567AF800499A7D /* JoinFriendsScreen.swift */; };
 		CA0192F729567B1400499A7D /* CreateGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0192F629567B1400499A7D /* CreateGameScreen.swift */; };
 		CA2A895129574F2500CC5DA4 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = CA2A895029574F2500CC5DA4 /* SocketIO */; };
+		CA2A8954295755DE00CC5DA4 /* CreateGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A8953295755DE00CC5DA4 /* CreateGameViewModel.swift */; };
 		CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492560294BDB54008D3DBC /* xyloApp.swift */; };
 		CA492563294BDB54008D3DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492562294BDB54008D3DBC /* ContentView.swift */; };
 		CA492565294BDB55008D3DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA492564294BDB55008D3DBC /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		CA0192EA2955343A00499A7D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CA0192F429567AF800499A7D /* JoinFriendsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFriendsScreen.swift; sourceTree = "<group>"; };
 		CA0192F629567B1400499A7D /* CreateGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameScreen.swift; sourceTree = "<group>"; };
+		CA2A8953295755DE00CC5DA4 /* CreateGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewModel.swift; sourceTree = "<group>"; };
 		CA49255D294BDB54008D3DBC /* xylo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xylo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA492560294BDB54008D3DBC /* xyloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyloApp.swift; sourceTree = "<group>"; };
 		CA492562294BDB54008D3DBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,10 +100,10 @@
 		CA0192E1295524E300499A7D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA2A89522957558000CC5DA4 /* CreateGame */,
 				CA492562294BDB54008D3DBC /* ContentView.swift */,
 				CA0192E32955268200499A7D /* WelcomeScreen.swift */,
 				CA0192F429567AF800499A7D /* JoinFriendsScreen.swift */,
-				CA0192F629567B1400499A7D /* CreateGameScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -120,6 +122,15 @@
 				CA0192E92955342700499A7D /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA2A89522957558000CC5DA4 /* CreateGame */ = {
+			isa = PBXGroup;
+			children = (
+				CA0192F629567B1400499A7D /* CreateGameScreen.swift */,
+				CA2A8953295755DE00CC5DA4 /* CreateGameViewModel.swift */,
+			);
+			path = CreateGame;
 			sourceTree = "<group>";
 		};
 		CA492554294BDB54008D3DBC = {
@@ -324,6 +335,7 @@
 				CA492563294BDB54008D3DBC /* ContentView.swift in Sources */,
 				CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */,
 				CA0192F729567B1400499A7D /* CreateGameScreen.swift in Sources */,
+				CA2A8954295755DE00CC5DA4 /* CreateGameViewModel.swift in Sources */,
 				CA0192F529567AF800499A7D /* JoinFriendsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
