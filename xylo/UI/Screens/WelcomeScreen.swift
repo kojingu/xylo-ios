@@ -27,12 +27,8 @@ private extension WelcomeScreen {
             TitleText()
             Spacer()
             VStack {
-                JoinFriendsButton {
-                    // TODO go to join your friends screen
-                }
-                CreateGameButton {
-                    // TODO go to create game screen
-                }
+                JoinFriendsButton()
+                CreateGameButton()
             }
             .frame(maxWidth: .infinity)
             .padding(.all)
@@ -50,38 +46,29 @@ private extension WelcomeScreen {
     
     private struct JoinFriendsButton: View {
         
-        let action: () -> Void
-        
         var body: some View {
-            Button {
-                action()
-            } label: {
+            NavigationLink(destination: JoinFriendsScreen()) {
                 Text(LocalizedStringKey("join_friends"))
                     .font(.callout)
                     .padding(.all)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.purple)
             }
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity)
-            .background(Color.purple)
-            
         }
     }
     
     private struct CreateGameButton: View {
-        
-        let action: () -> Void
-        
+                
         var body: some View {
-            Button {
-                action()
-            } label: {
+            NavigationLink(destination: CreateGameScreen()) {
                 Text(LocalizedStringKey("create_game"))
                     .font(.callout)
                     .padding(.all)
+                    .foregroundColor(.purple)
+                    .frame(maxWidth: .infinity)
+                    .border(Color.purple, width: 2)
             }
-            .foregroundColor(.purple)
-            .frame(maxWidth: .infinity)
-            .border(Color.purple, width: 2)
         }
     }
 }
