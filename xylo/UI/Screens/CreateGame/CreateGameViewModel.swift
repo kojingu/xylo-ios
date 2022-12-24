@@ -11,5 +11,12 @@ extension CreateGameScreen {
     
     class ViewModel: ObservableObject {
         
+        @Published var nickname: String = ""
+        @Published var rounds: Int = 3
+        
+        init() {
+            
+        }
+        
     }
 }

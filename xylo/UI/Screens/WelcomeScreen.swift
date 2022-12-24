@@ -63,13 +63,8 @@ private extension WelcomeScreen {
     private struct CreateGameButton: View {
 
         var body: some View {
-            NavigationLink(destination: CreateGameScreen()) {
-                Text(LocalizedStringKey("create_game"))
-                    .font(.callout)
-                    .padding(.all)
-                    .foregroundColor(.purple)
-                    .frame(maxWidth: .infinity)
-                    .border(Color.purple, width: 2)
+            NavigationLink(destination: CreateGameScreen(viewModel: .init())) {
+                BorderedPurpleLabel(titleKey: "create_game")
             }
         }
     }
