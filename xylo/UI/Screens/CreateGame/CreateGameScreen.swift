@@ -13,12 +13,14 @@ struct CreateGameScreen: View {
     
     var body: some View {
         VStack {
-            Spacer()
-            
-            TextField("Enter your nickname", text: $viewModel.nickname)
-                .padding()
-                .border(.gray, width: 2)
-                .padding()
+            Spacer() 
+            EntryField (
+                placeholder: "Enter your nickname",
+                nickname: $viewModel.nickname,
+                prompt: viewModel.nicknamePrompt,
+                isValid: viewModel.validNickname
+            )
+            .padding()
             
             Stepper(value: $viewModel.rounds, in: 3...20, step: 1) {
                 Text("The game will have \(viewModel.rounds) rounds")
@@ -27,14 +29,47 @@ struct CreateGameScreen: View {
             
             Spacer()
             
-            NavigationLink(destination: InviteFriendsScreen()) {
-                PurpleLabel(stringKey: "lets_go")
+            CreateGameButton {
+                self.viewModel.createGame()
             }
             .padding(.all)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(LocalizedStringKey("app_title"))
         
+    }
+}
+
+extension CreateGameScreen {
+    
+    private struct CreateGameButton: View {
+        
+        let action: () -> Void
+        
+        var body: some View {
+            Button {
+                action()
+            } label: {
+                PurpleLabel(stringKey: "lets_go")
+            }
+        }
+    }
+    
+    private struct EntryField: View {
+        
+        let placeholder: String
+        let nickname: Binding<String>
+        let prompt: String
+        let isValid: Bool
+        
+        var body: some View {
+            VStack(alignment: .leading) {
+                TextField(placeholder, text: nickname)
+                    .padding()
+                    .border(isValid ? .gray : .red, width: 2)
+                Text(prompt)
+            }
+        }
     }
 }
 
