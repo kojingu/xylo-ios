@@ -7,16 +7,11 @@
 
 import Foundation
 
-extension CreateGameScreen {
+class CreateGameViewModel: ObservableObject {
     
-    class ViewModel: ObservableObject {
-        
-        @Published var nickname: String = ""
-        @Published var rounds: Int = 3
-        
-        init() {
-            
-        }
-        
-    }
+    @Published var nickname: String = ""
+    @Published var rounds: Int = 3
+    
+    private let socketIOService: SocketIOService = DIContainer.resolve()
+    
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreateGameScreen: View {
     
-    @ObservedObject private (set) var viewModel: ViewModel
+    @ObservedObject private (set) var viewModel: CreateGameViewModel
     
     var body: some View {
         VStack {
@@ -41,7 +41,7 @@ struct CreateGameScreen: View {
 struct CreateGameScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CreateGameScreen(viewModel: .init())
+            CreateGameScreen(viewModel: DIContainer.resolve())
         }
     }
 }

@@ -25,6 +25,12 @@
 		CA492577294BDB55008D3DBC /* xyloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492576294BDB55008D3DBC /* xyloTests.swift */; };
 		CA492581294BDB55008D3DBC /* xyloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492580294BDB55008D3DBC /* xyloUITests.swift */; };
 		CA492583294BDB55008D3DBC /* xyloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492582294BDB55008D3DBC /* xyloUITestsLaunchTests.swift */; };
+		CA774A86295A1FDF006088EC /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA774A85295A1FDF006088EC /* DIContainer.swift */; };
+		CA774A8F295A24B2006088EC /* SceneAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA774A8E295A24B2006088EC /* SceneAssembly.swift */; };
+		CA7EE3B1295A318B006E2032 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CA7EE3B0295A318B006E2032 /* Swinject */; };
+		CA7EE3B5295A32AC006E2032 /* SocketIOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EE3B4295A32AC006E2032 /* SocketIOService.swift */; };
+		CA7EE3B8295A359F006E2032 /* SocketIOServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7EE3B7295A359F006E2032 /* SocketIOServiceAssembly.swift */; };
+		CAE7645D295A25970040F7A6 /* CreateGameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7645C295A25970040F7A6 /* CreateGameAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,11 @@
 		CA49257C294BDB55008D3DBC /* xyloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xyloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA492580294BDB55008D3DBC /* xyloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyloUITests.swift; sourceTree = "<group>"; };
 		CA492582294BDB55008D3DBC /* xyloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA774A85295A1FDF006088EC /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CA774A8E295A24B2006088EC /* SceneAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAssembly.swift; sourceTree = "<group>"; };
+		CA7EE3B4295A32AC006E2032 /* SocketIOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOService.swift; sourceTree = "<group>"; };
+		CA7EE3B7295A359F006E2032 /* SocketIOServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOServiceAssembly.swift; sourceTree = "<group>"; };
+		CAE7645C295A25970040F7A6 /* CreateGameAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2A895129574F2500CC5DA4 /* SocketIO in Frameworks */,
+				CA7EE3B1295A318B006E2032 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +109,7 @@
 		CA0192E0295524D000499A7D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CA492560294BDB54008D3DBC /* xyloApp.swift */,
 				CA0192E2295524F300499A7D /* Components */,
 				CA0192E1295524E300499A7D /* Screens */,
 			);
@@ -165,11 +178,11 @@
 		CA49255F294BDB54008D3DBC /* xylo */ = {
 			isa = PBXGroup;
 			children = (
+				CA7EE3B3295A328C006E2032 /* Services */,
+				CA7EE3B2295A3269006E2032 /* Persistence */,
+				CA774A84295A1FCA006088EC /* Injected */,
 				CA0192EB2955350300499A7D /* Resources */,
 				CA0192E0295524D000499A7D /* UI */,
-				CA492560294BDB54008D3DBC /* xyloApp.swift */,
-				CA492569294BDB55008D3DBC /* Persistence.swift */,
-				CA49256B294BDB55008D3DBC /* xylo.xcdatamodeld */,
 				CA492566294BDB55008D3DBC /* Preview Content */,
 			);
 			path = xylo;
@@ -200,6 +213,66 @@
 			path = xyloUITests;
 			sourceTree = "<group>";
 		};
+		CA774A84295A1FCA006088EC /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				CA774A8D295A2400006088EC /* Dependency Assemblers */,
+				CA774A85295A1FDF006088EC /* DIContainer.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		CA774A8D295A2400006088EC /* Dependency Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				CA7EE3B6295A358C006E2032 /* Services */,
+				CA774A90295A2558006088EC /* Scenes */,
+				CA774A8E295A24B2006088EC /* SceneAssembly.swift */,
+			);
+			path = "Dependency Assemblers";
+			sourceTree = "<group>";
+		};
+		CA774A90295A2558006088EC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7645B295A25850040F7A6 /* Create Game */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CA7EE3B2295A3269006E2032 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CA49256B294BDB55008D3DBC /* xylo.xcdatamodeld */,
+				CA492569294BDB55008D3DBC /* Persistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		CA7EE3B3295A328C006E2032 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA7EE3B4295A32AC006E2032 /* SocketIOService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA7EE3B6295A358C006E2032 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA7EE3B7295A359F006E2032 /* SocketIOServiceAssembly.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CAE7645B295A25850040F7A6 /* Create Game */ = {
+			isa = PBXGroup;
+			children = (
+				CAE7645C295A25970040F7A6 /* CreateGameAssembly.swift */,
+			);
+			path = "Create Game";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +291,7 @@
 			name = xylo;
 			packageProductDependencies = (
 				CA2A895029574F2500CC5DA4 /* SocketIO */,
+				CA7EE3B0295A318B006E2032 /* Swinject */,
 			);
 			productName = xylo;
 			productReference = CA49255D294BDB54008D3DBC /* xylo.app */;
@@ -294,6 +368,7 @@
 			mainGroup = CA492554294BDB54008D3DBC;
 			packageReferences = (
 				CA2A894F29574F2500CC5DA4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				CA7EE3AF295A318B006E2032 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = CA49255E294BDB54008D3DBC /* Products */;
 			projectDirPath = "";
@@ -342,13 +417,18 @@
 				CA2A895A295768D100CC5DA4 /* PurpleLabel.swift in Sources */,
 				CA49256A294BDB55008D3DBC /* Persistence.swift in Sources */,
 				CA49256D294BDB55008D3DBC /* xylo.xcdatamodeld in Sources */,
+				CA774A86295A1FDF006088EC /* DIContainer.swift in Sources */,
+				CA7EE3B5295A32AC006E2032 /* SocketIOService.swift in Sources */,
 				CA2A89562957634A00CC5DA4 /* BorderedPurpleLabel.swift in Sources */,
 				CA0192E42955268200499A7D /* WelcomeScreen.swift in Sources */,
 				CA492563294BDB54008D3DBC /* ContentView.swift in Sources */,
 				CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */,
+				CA7EE3B8295A359F006E2032 /* SocketIOServiceAssembly.swift in Sources */,
 				CA0192F729567B1400499A7D /* CreateGameScreen.swift in Sources */,
 				CA2A8954295755DE00CC5DA4 /* CreateGameViewModel.swift in Sources */,
+				CAE7645D295A25970040F7A6 /* CreateGameAssembly.swift in Sources */,
 				CA0192F529567AF800499A7D /* JoinFriendsScreen.swift in Sources */,
+				CA774A8F295A24B2006088EC /* SceneAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +775,14 @@
 				kind = branch;
 			};
 		};
+		CA7EE3AF295A318B006E2032 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -702,6 +790,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA2A894F29574F2500CC5DA4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
 			productName = SocketIO;
+		};
+		CA7EE3B0295A318B006E2032 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA7EE3AF295A318B006E2032 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 
