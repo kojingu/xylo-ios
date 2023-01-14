@@ -9,6 +9,8 @@ import Foundation
 
 class CreateGameViewModel: ObservableObject {
     
+    @Inject var socketIOService: SocketIOService
+    
     @Published var nickname: String = ""
     @Published var rounds: Int = 3
     @Published var emptyNickname = false
@@ -25,8 +27,6 @@ class CreateGameViewModel: ObservableObject {
             return "The nickname cannot be empty"
         }
     }
-    
-    private let socketIOService: SocketIOService = DIContainer.resolve()
     
     func createGame() {
         hasClickedButton = true

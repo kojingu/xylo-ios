@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct xyloApp: App {
+    
     let persistenceController = PersistenceController.shared
+    let dependencyContainer = DependencyContainer()
 
     var body: some Scene {
         WindowGroup {

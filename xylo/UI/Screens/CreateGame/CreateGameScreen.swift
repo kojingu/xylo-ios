@@ -76,7 +76,7 @@ extension CreateGameScreen {
 struct CreateGameScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CreateGameScreen(viewModel: DIContainer.resolve())
+            CreateGameScreen(viewModel: .init())
         }
     }
 }

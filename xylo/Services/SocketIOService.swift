@@ -9,16 +9,10 @@ import SocketIO
 
 class SocketIOService {
     
-    let manager: SocketManager
-    let socket: SocketIOClient
-    
-    init(manager: SocketManager) {
-        self.manager = manager
-        socket = manager.defaultSocket
-    }
+    @Inject var manager: SocketManager
     
     func createGame(nickname: String, rounds: Int, completion: @escaping () -> Void) {
-        socket.emit(
+        manager.defaultSocket.emit(
             "create_game",
             [
                 "nickname": nickname,
