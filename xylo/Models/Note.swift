@@ -58,3 +58,24 @@ extension Note {
         }
     }
 }
+
+extension Note {
+    var fileName: String {
+        switch self {
+        case .C:
+            return "C.wav"
+        case .D:
+            return "D.wav"
+        case .E:
+            return "E.wav"
+        case .F:
+            return "F.wav"
+        case .G:
+            return "G.wav"
+        case .A:
+            return "A.wav"
+        case .B:
+            return "B.wav"
+        }
+    }
+}

@@ -10,10 +10,13 @@ import SwiftUI
 struct CreateSonataScreen: View {
     var body: some View {
         VStack {
+            Spacer()
             Text("Challenge your friends with a random song!")
                 .padding()
             Spacer()
+            Spacer()
             XyloView { note in /* TODO */ }
+            Spacer()
             Spacer()
             PurpleButton(textKey: "start_hunger_games") { /* TODO */ }
                 .padding()
