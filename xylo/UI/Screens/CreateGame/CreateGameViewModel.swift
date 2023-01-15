@@ -9,7 +9,7 @@ import Foundation
 
 class CreateGameViewModel: ObservableObject {
     
-    @Inject var socketIOService: SocketIOService
+    let navigator: Navigator
     
     @Published var nickname: String = ""
     @Published var rounds: Int = 3
@@ -28,18 +28,20 @@ class CreateGameViewModel: ObservableObject {
         }
     }
     
+    init(navigator: Navigator) {
+        self.navigator = navigator
+    }
+    
+    private func isValidNickname() -> Bool {
+        return nickname != nickname
+    }
+    
     func createGame() {
         hasClickedButton = true
         if nickname == "" {
             return
         }
-        
-        socketIOService.createGame(nickname: nickname, rounds: rounds) {
-            // TODO go to invite friends screen
-        }
-    }
-    
-    private func isValidNickname() -> Bool {
-        return nickname != nickname
+        // TODO add actual server logic here
+        navigator.goToInviteFriends(nickname: nickname, code: "WXYZ")
     }
 }

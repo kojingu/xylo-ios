@@ -9,8 +9,7 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     
-    let joinFriendsAction: () -> Void
-    let createGameAction: () -> Void
+    let navigator: Navigator
     
     var body: some View {
         VStack {
@@ -18,14 +17,14 @@ struct WelcomeScreen: View {
             Text("Xylo").font(.system(size: 80, weight: .bold, design: .monospaced))
             Spacer()
             VStack {
-                Button(LocalizedStringKey("join_friends")){ joinFriendsAction() }
+                Button(LocalizedStringKey("join_friends")) { navigator.goToJoinFriends() }
                     .font(.callout)
                     .padding(.all)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .background(Color.purple)
                 
-                BorderedPurpleButton(titleKey: "create_game") { createGameAction() }
+                BorderedPurpleButton(titleKey: "create_game") { navigator.goToCreateGame() }
             }
             .frame(maxWidth: .infinity)
             .padding(.all)
@@ -37,6 +36,6 @@ struct WelcomeScreen: View {
 
 struct WelcomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeScreen {} createGameAction: {}
+        WelcomeScreen(navigator: Navigator())
     }
 }

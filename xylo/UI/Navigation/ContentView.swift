@@ -14,21 +14,15 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack(path: $navigator.path) {
-            WelcomeScreen(
-                joinFriendsAction: { navigator.goToJoinFriends() },
-                createGameAction: { navigator.goToCreateGame() }
-            )
+            WelcomeScreen(navigator: navigator)
             .navigationDestination(for: Navigator.Screens.self) { screen in
                 switch screen {
                 case .welcomeScreen:
-                    WelcomeScreen(
-                        joinFriendsAction: { navigator.goToJoinFriends() },
-                        createGameAction: { navigator.goToCreateGame() }
-                    )
+                    WelcomeScreen(navigator: navigator)
                 case .joinFriends:
                     JoinFriendsScreen()
                 case .createGame:
-                    CreateGameScreen(viewModel: .init())
+                    CreateGameScreen(viewModel: .init(navigator: navigator))
                 case .inviteFriends(let nickname, let code):
                     InviteFriendsScreen(viewModel: .init(nickname: nickname, code: code))
                 }
