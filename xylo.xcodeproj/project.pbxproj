@@ -33,6 +33,10 @@
 		CA8359DE29737AAB00A7E0B1 /* InviteFriendsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8359DD29737AAB00A7E0B1 /* InviteFriendsScreen.swift */; };
 		CA8359E029737B6C00A7E0B1 /* InviteFriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8359DF29737B6C00A7E0B1 /* InviteFriendsViewModel.swift */; };
 		CA8359E329738D2000A7E0B1 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8359E229738D2000A7E0B1 /* Navigator.swift */; };
+		CA96C6792974A06B008169B5 /* CreateSonataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA96C6782974A06B008169B5 /* CreateSonataScreen.swift */; };
+		CA96C67B2974A1E8008169B5 /* NoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA96C67A2974A1E8008169B5 /* NoteButton.swift */; };
+		CA96C67E2974A2FC008169B5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA96C67D2974A2FC008169B5 /* Note.swift */; };
+		CA96C6802974A854008169B5 /* XyloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA96C67F2974A854008169B5 /* XyloView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		CA8359DD29737AAB00A7E0B1 /* InviteFriendsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsScreen.swift; sourceTree = "<group>"; };
 		CA8359DF29737B6C00A7E0B1 /* InviteFriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewModel.swift; sourceTree = "<group>"; };
 		CA8359E229738D2000A7E0B1 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		CA96C6782974A06B008169B5 /* CreateSonataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSonataScreen.swift; sourceTree = "<group>"; };
+		CA96C67A2974A1E8008169B5 /* NoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteButton.swift; sourceTree = "<group>"; };
+		CA96C67D2974A2FC008169B5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CA96C67F2974A854008169B5 /* XyloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XyloView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 		CA0192E1295524E300499A7D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA96C6752974A041008169B5 /* CreateSonata */,
 				CA8359E52973924C00A7E0B1 /* JoinFriends */,
 				CA8359E42973924200A7E0B1 /* Welcome */,
 				CA8359DC29737A8D00A7E0B1 /* InviteFriends */,
@@ -137,6 +146,8 @@
 			children = (
 				CA2A89552957634A00CC5DA4 /* BorderedPurpleButton.swift */,
 				CA2A8959295768D100CC5DA4 /* PurpleButton.swift */,
+				CA96C67A2974A1E8008169B5 /* NoteButton.swift */,
+				CA96C67F2974A854008169B5 /* XyloView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -182,6 +193,7 @@
 		CA49255F294BDB54008D3DBC /* xylo */ = {
 			isa = PBXGroup;
 			children = (
+				CA96C67C2974A2EA008169B5 /* Models */,
 				CA7EE3B3295A328C006E2032 /* Services */,
 				CA7EE3B2295A3269006E2032 /* Persistence */,
 				CA774A84295A1FCA006088EC /* Injected */,
@@ -285,6 +297,22 @@
 				CA0192F429567AF800499A7D /* JoinFriendsScreen.swift */,
 			);
 			path = JoinFriends;
+			sourceTree = "<group>";
+		};
+		CA96C6752974A041008169B5 /* CreateSonata */ = {
+			isa = PBXGroup;
+			children = (
+				CA96C6782974A06B008169B5 /* CreateSonataScreen.swift */,
+			);
+			path = CreateSonata;
+			sourceTree = "<group>";
+		};
+		CA96C67C2974A2EA008169B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA96C67D2974A2FC008169B5 /* Note.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,12 +457,16 @@
 			files = (
 				CA2A895A295768D100CC5DA4 /* PurpleButton.swift in Sources */,
 				CA8359D629736FFD00A7E0B1 /* ServicesModule.swift in Sources */,
+				CA96C67E2974A2FC008169B5 /* Note.swift in Sources */,
+				CA96C6792974A06B008169B5 /* CreateSonataScreen.swift in Sources */,
 				CA49256A294BDB55008D3DBC /* Persistence.swift in Sources */,
 				CA49256D294BDB55008D3DBC /* xylo.xcdatamodeld in Sources */,
 				CA8359DE29737AAB00A7E0B1 /* InviteFriendsScreen.swift in Sources */,
 				CA8359D9297372E600A7E0B1 /* SocketIoModule.swift in Sources */,
 				CA7EE3B5295A32AC006E2032 /* SocketIOService.swift in Sources */,
 				CA2A89562957634A00CC5DA4 /* BorderedPurpleButton.swift in Sources */,
+				CA96C6802974A854008169B5 /* XyloView.swift in Sources */,
+				CA96C67B2974A1E8008169B5 /* NoteButton.swift in Sources */,
 				CA8359E029737B6C00A7E0B1 /* InviteFriendsViewModel.swift in Sources */,
 				CA0192E42955268200499A7D /* WelcomeScreen.swift in Sources */,
 				CA492563294BDB54008D3DBC /* ContentView.swift in Sources */,

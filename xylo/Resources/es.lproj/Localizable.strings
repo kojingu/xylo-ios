@@ -6,3 +6,13 @@
 "game_code_label" = "Este es tu código!";
 "%@ has_joined" = "%@ se ha unido";
 "lets_start" = "¡Comienza!";
+
+"A_KEY" = "LA";
+"B_KEY" = "SI";
+"C_KEY" = "DO";
+"D_KEY" = "RE";
+"E_KEY" = "MI";
+"F_KEY" = "FA";
+"G_KEY" = "SOL";
+
+"start_hunger_games" = "¡Que comiencen los juegos del hambre!";

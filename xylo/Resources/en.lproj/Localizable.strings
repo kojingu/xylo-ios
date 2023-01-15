@@ -6,3 +6,13 @@
 "game_code_label" = "This is your game code!";
 "%@ has_joined" = "%@ has joined";
 "lets_start" = "Let's start!";
+
+"A_KEY" = "A";
+"B_KEY" = "B";
+"C_KEY" = "C";
+"D_KEY" = "D";
+"E_KEY" = "E";
+"F_KEY" = "F";
+"G_KEY" = "G";
+
+"start_hunger_games" = "Let the hunger games begin!";
