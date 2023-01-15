@@ -14,7 +14,7 @@
 		CA2A895129574F2500CC5DA4 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = CA2A895029574F2500CC5DA4 /* SocketIO */; };
 		CA2A8954295755DE00CC5DA4 /* CreateGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A8953295755DE00CC5DA4 /* CreateGameViewModel.swift */; };
 		CA2A89562957634A00CC5DA4 /* BorderedPurpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A89552957634A00CC5DA4 /* BorderedPurpleButton.swift */; };
-		CA2A895A295768D100CC5DA4 /* PurpleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A8959295768D100CC5DA4 /* PurpleLabel.swift */; };
+		CA2A895A295768D100CC5DA4 /* PurpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A8959295768D100CC5DA4 /* PurpleButton.swift */; };
 		CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492560294BDB54008D3DBC /* xyloApp.swift */; };
 		CA492563294BDB54008D3DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA492562294BDB54008D3DBC /* ContentView.swift */; };
 		CA492565294BDB55008D3DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA492564294BDB55008D3DBC /* Assets.xcassets */; };
@@ -60,7 +60,7 @@
 		CA0192F629567B1400499A7D /* CreateGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameScreen.swift; sourceTree = "<group>"; };
 		CA2A8953295755DE00CC5DA4 /* CreateGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewModel.swift; sourceTree = "<group>"; };
 		CA2A89552957634A00CC5DA4 /* BorderedPurpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedPurpleButton.swift; sourceTree = "<group>"; };
-		CA2A8959295768D100CC5DA4 /* PurpleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleLabel.swift; sourceTree = "<group>"; };
+		CA2A8959295768D100CC5DA4 /* PurpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleButton.swift; sourceTree = "<group>"; };
 		CA49255D294BDB54008D3DBC /* xylo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xylo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA492560294BDB54008D3DBC /* xyloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyloApp.swift; sourceTree = "<group>"; };
 		CA492562294BDB54008D3DBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2A89552957634A00CC5DA4 /* BorderedPurpleButton.swift */,
-				CA2A8959295768D100CC5DA4 /* PurpleLabel.swift */,
+				CA2A8959295768D100CC5DA4 /* PurpleButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -427,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2A895A295768D100CC5DA4 /* PurpleLabel.swift in Sources */,
+				CA2A895A295768D100CC5DA4 /* PurpleButton.swift in Sources */,
 				CA8359D629736FFD00A7E0B1 /* ServicesModule.swift in Sources */,
 				CA49256A294BDB55008D3DBC /* Persistence.swift in Sources */,
 				CA49256D294BDB55008D3DBC /* xylo.xcdatamodeld in Sources */,

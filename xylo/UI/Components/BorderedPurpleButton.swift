@@ -9,11 +9,11 @@ import SwiftUI
 
 struct BorderedPurpleButton: View {
     
-    let titleKey: String
+    let textKey: String
     let action: () -> Void
     
     var body: some View {
-        Button(LocalizedStringKey(titleKey)) { action() }
+        Button(LocalizedStringKey(textKey)) { action() }
         .font(.callout)
         .padding(.all)
         .foregroundColor(.purple)

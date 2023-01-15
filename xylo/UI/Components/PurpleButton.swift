@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct PurpleLabel: View {
+struct PurpleButton: View {
     
-    var stringKey: String
+    var textKey: String
+    var action: () -> Void
     
     var body: some View {
-        Text(LocalizedStringKey(stringKey))
+        Button(LocalizedStringKey(textKey)) { action() }
             .font(.callout)
             .padding(.all)
             .foregroundColor(.white)

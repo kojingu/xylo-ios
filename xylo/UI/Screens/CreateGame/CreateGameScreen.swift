@@ -29,7 +29,7 @@ struct CreateGameScreen: View {
             
             Spacer()
             
-            CreateGameButton {
+            PurpleButton(textKey: "lets_go") {
                 self.viewModel.createGame()
             }
             .padding(.all)
@@ -41,19 +41,6 @@ struct CreateGameScreen: View {
 }
 
 extension CreateGameScreen {
-    
-    private struct CreateGameButton: View {
-        
-        let action: () -> Void
-        
-        var body: some View {
-            Button {
-                action()
-            } label: {
-                PurpleLabel(stringKey: "lets_go")
-            }
-        }
-    }
     
     private struct EntryField: View {
         

@@ -24,7 +24,7 @@ struct WelcomeScreen: View {
                     .frame(maxWidth: .infinity)
                     .background(Color.purple)
                 
-                BorderedPurpleButton(titleKey: "create_game") { navigator.goToCreateGame() }
+                BorderedPurpleButton(textKey: "create_game") { navigator.goToCreateGame() }
             }
             .frame(maxWidth: .infinity)
             .padding(.all)

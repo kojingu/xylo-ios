@@ -5,3 +5,4 @@
 "invite_friends_label %@" = "Hola %@, tus amigos pueden unirse usando el código que generamos para ti.";
 "game_code_label" = "Este es tu código!";
 "%@ has_joined" = "%@ se ha unido";
+"lets_start" = "¡Comienza!";
