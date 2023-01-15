@@ -2,3 +2,6 @@
 "create_game" = "Create a new game";
 "join_friends" = "Join your friends";
 "lets_go" = "Let's go!";
+"invite_friends_label %@" = "Hi %@, your friends will be able to join you using the game code we have generated for you.";
+"game_code_label" = "This is your game code!";
+"%@ has_joined" = "%@ has joined";

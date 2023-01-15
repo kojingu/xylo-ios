@@ -15,7 +15,7 @@ struct xyloApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(navigator: .init())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
