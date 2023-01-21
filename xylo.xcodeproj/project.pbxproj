@@ -45,6 +45,14 @@
 		CA96C69D2974BDE2008169B5 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA96C6952974BDE2008169B5 /* D.wav */; };
 		CA96C69E2974BDE2008169B5 /* _readme_and_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA96C6962974BDE2008169B5 /* _readme_and_license.txt */; };
 		CA96C69F2974BDE2008169B5 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA96C6972974BDE2008169B5 /* F.wav */; };
+		CACF24F6297B609E0077B66E /* WaitForSonataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF24F5297B609E0077B66E /* WaitForSonataScreen.swift */; };
+		CACF24F9297B62820077B66E /* GuessSonataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF24F8297B62820077B66E /* GuessSonataScreen.swift */; };
+		CACF24FC297B73CB0077B66E /* CountdownScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF24FB297B73CB0077B66E /* CountdownScreen.swift */; };
+		CACF24FE297B757C0077B66E /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF24FD297B757C0077B66E /* ScoreBoard.swift */; };
+		CACF2502297B79050077B66E /* GameOverScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2501297B79050077B66E /* GameOverScreen.swift */; };
+		CACF2506297B7A930077B66E /* ScoreTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2505297B7A930077B66E /* ScoreTable.swift */; };
+		CACF2509297B7B580077B66E /* ScoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2508297B7B580077B66E /* ScoreScreen.swift */; };
+		CACF250B297B7C350077B66E /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF250A297B7C350077B66E /* EntryField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +113,14 @@
 		CA96C6952974BDE2008169B5 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 		CA96C6962974BDE2008169B5 /* _readme_and_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _readme_and_license.txt; sourceTree = "<group>"; };
 		CA96C6972974BDE2008169B5 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		CACF24F5297B609E0077B66E /* WaitForSonataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitForSonataScreen.swift; sourceTree = "<group>"; };
+		CACF24F8297B62820077B66E /* GuessSonataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessSonataScreen.swift; sourceTree = "<group>"; };
+		CACF24FB297B73CB0077B66E /* CountdownScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownScreen.swift; sourceTree = "<group>"; };
+		CACF24FD297B757C0077B66E /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
+		CACF2501297B79050077B66E /* GameOverScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScreen.swift; sourceTree = "<group>"; };
+		CACF2505297B7A930077B66E /* ScoreTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTable.swift; sourceTree = "<group>"; };
+		CACF2508297B7B580077B66E /* ScoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreScreen.swift; sourceTree = "<group>"; };
+		CACF250A297B7C350077B66E /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +164,11 @@
 		CA0192E1295524E300499A7D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CACF2507297B7B070077B66E /* Score */,
+				CACF24FF297B78EA0077B66E /* GameOver */,
+				CACF24FA297B73950077B66E /* Countdown */,
+				CACF24F7297B626E0077B66E /* GuessSonata */,
+				CACF24F4297B607D0077B66E /* WaitForSonata */,
 				CA96C6752974A041008169B5 /* CreateSonata */,
 				CA8359E52973924C00A7E0B1 /* JoinFriends */,
 				CA8359E42973924200A7E0B1 /* Welcome */,
@@ -164,6 +185,8 @@
 				CA2A8959295768D100CC5DA4 /* PurpleButton.swift */,
 				CA96C67A2974A1E8008169B5 /* NoteButton.swift */,
 				CA96C67F2974A854008169B5 /* XyloView.swift */,
+				CACF2505297B7A930077B66E /* ScoreTable.swift */,
+				CACF250A297B7C350077B66E /* EntryField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -328,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				CA96C67D2974A2FC008169B5 /* Note.swift */,
+				CACF24FD297B757C0077B66E /* ScoreBoard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,6 +369,46 @@
 				CA96C6942974BDE2008169B5 /* G.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		CACF24F4297B607D0077B66E /* WaitForSonata */ = {
+			isa = PBXGroup;
+			children = (
+				CACF24F5297B609E0077B66E /* WaitForSonataScreen.swift */,
+			);
+			path = WaitForSonata;
+			sourceTree = "<group>";
+		};
+		CACF24F7297B626E0077B66E /* GuessSonata */ = {
+			isa = PBXGroup;
+			children = (
+				CACF24F8297B62820077B66E /* GuessSonataScreen.swift */,
+			);
+			path = GuessSonata;
+			sourceTree = "<group>";
+		};
+		CACF24FA297B73950077B66E /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				CACF24FB297B73CB0077B66E /* CountdownScreen.swift */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
+		CACF24FF297B78EA0077B66E /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				CACF2501297B79050077B66E /* GameOverScreen.swift */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		CACF2507297B7B070077B66E /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				CACF2508297B7B580077B66E /* ScoreScreen.swift */,
+			);
+			path = Score;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,24 +563,32 @@
 				CA8359D629736FFD00A7E0B1 /* ServicesModule.swift in Sources */,
 				CA96C67E2974A2FC008169B5 /* Note.swift in Sources */,
 				CA96C6792974A06B008169B5 /* CreateSonataScreen.swift in Sources */,
+				CACF24FC297B73CB0077B66E /* CountdownScreen.swift in Sources */,
 				CA49256A294BDB55008D3DBC /* Persistence.swift in Sources */,
 				CA49256D294BDB55008D3DBC /* xylo.xcdatamodeld in Sources */,
+				CACF24FE297B757C0077B66E /* ScoreBoard.swift in Sources */,
 				CA8359DE29737AAB00A7E0B1 /* InviteFriendsScreen.swift in Sources */,
 				CA8359D9297372E600A7E0B1 /* SocketIoModule.swift in Sources */,
 				CA7EE3B5295A32AC006E2032 /* SocketIOService.swift in Sources */,
 				CA2A89562957634A00CC5DA4 /* BorderedPurpleButton.swift in Sources */,
 				CA96C6802974A854008169B5 /* XyloView.swift in Sources */,
 				CA96C67B2974A1E8008169B5 /* NoteButton.swift in Sources */,
+				CACF24F6297B609E0077B66E /* WaitForSonataScreen.swift in Sources */,
 				CA8359E029737B6C00A7E0B1 /* InviteFriendsViewModel.swift in Sources */,
 				CA0192E42955268200499A7D /* WelcomeScreen.swift in Sources */,
+				CACF24F9297B62820077B66E /* GuessSonataScreen.swift in Sources */,
+				CACF2502297B79050077B66E /* GameOverScreen.swift in Sources */,
 				CA492563294BDB54008D3DBC /* ContentView.swift in Sources */,
+				CACF2509297B7B580077B66E /* ScoreScreen.swift in Sources */,
 				CA8359E329738D2000A7E0B1 /* Navigator.swift in Sources */,
 				CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */,
 				CA8359DB2973763100A7E0B1 /* DependencyContainer.swift in Sources */,
 				CA8359D2297369BA00A7E0B1 /* DependencyInjector.swift in Sources */,
+				CACF250B297B7C350077B66E /* EntryField.swift in Sources */,
 				CA0192F729567B1400499A7D /* CreateGameScreen.swift in Sources */,
 				CA2A8954295755DE00CC5DA4 /* CreateGameViewModel.swift in Sources */,
 				CA0192F529567AF800499A7D /* JoinFriendsScreen.swift in Sources */,
+				CACF2506297B7A930077B66E /* ScoreTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
