@@ -16,10 +16,10 @@ struct EntryField: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            TextField(placeholder, text: nickname)
+            TextField(LocalizedStringKey(placeholder), text: nickname)
                 .padding()
                 .border(isValid ? .gray : .red, width: 2)
-            Text(prompt)
+            Text(LocalizedStringKey(prompt))
         }
     }
 }

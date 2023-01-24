@@ -53,6 +53,7 @@
 		CACF2506297B7A930077B66E /* ScoreTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2505297B7A930077B66E /* ScoreTable.swift */; };
 		CACF2509297B7B580077B66E /* ScoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2508297B7B580077B66E /* ScoreScreen.swift */; };
 		CACF250B297B7C350077B66E /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF250A297B7C350077B66E /* EntryField.swift */; };
+		CADE3D61297F6CF800710AAC /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = CADE3D60297F6CF800710AAC /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		CACF2505297B7A930077B66E /* ScoreTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTable.swift; sourceTree = "<group>"; };
 		CACF2508297B7B580077B66E /* ScoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreScreen.swift; sourceTree = "<group>"; };
 		CACF250A297B7C350077B66E /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
+		CADE3D60297F6CF800710AAC /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				CA96C6812974BB13008169B5 /* Sounds */,
 				CA492564294BDB55008D3DBC /* Assets.xcassets */,
 				CA0192E92955342700499A7D /* Localizable.strings */,
+				CADE3D60297F6CF800710AAC /* Localizable.stringsdict */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				CA96C69C2974BDE2008169B5 /* G.wav in Resources */,
 				CA96C69A2974BDE2008169B5 /* C.wav in Resources */,
 				CA492568294BDB55008D3DBC /* Preview Assets.xcassets in Resources */,
+				CADE3D61297F6CF800710AAC /* Localizable.stringsdict in Resources */,
 				CA0192E72955342700499A7D /* Localizable.strings in Resources */,
 				CA96C69B2974BDE2008169B5 /* B.wav in Resources */,
 				CA96C69E2974BDE2008169B5 /* _readme_and_license.txt in Resources */,

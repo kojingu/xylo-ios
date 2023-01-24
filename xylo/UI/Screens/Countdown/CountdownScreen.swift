@@ -17,8 +17,8 @@ struct CountdownScreen: View {
         VStack {
             
             Group {
-                Text("Nobody decoded the song").padding()
-                Text("\(winnerNickname) is a total Mozart!")
+                Text("nobody_guessed_sonata").padding()
+                Text("round_winner \(winnerNickname)")
             }
             .font(.system(size: 16))
             
@@ -28,12 +28,12 @@ struct CountdownScreen: View {
             
             Spacer()
             
-            Text("\(leftRoundsCount) rounds left")
+            Text("rounds_left \(leftRoundsCount)")
             
             Spacer()
             
             Group {
-                Text("Next round in")
+                Text("next_round_counter_label")
                 Text("3").font(.system(size: 24))
             }
         }

@@ -23,8 +23,8 @@ struct JoinFriendsScreen: View {
             Spacer()
             
             Group {
-                EntryField(placeholder: "Enter your nickname", nickname: $nickname, prompt: nicknamePrompt, isValid: isValidNickname)
-                EntryField(placeholder: "Enter the room code (ask your friend)", nickname: $roomcode, prompt: roomcodePrompt, isValid: isValidRoomcodePrompt)
+                EntryField(placeholder: "nickname_placeholder", nickname: $nickname, prompt: nicknamePrompt, isValid: isValidNickname)
+                EntryField(placeholder: "roomcode_placeholder", nickname: $roomcode, prompt: roomcodePrompt, isValid: isValidRoomcodePrompt)
             }
             
             Spacer()

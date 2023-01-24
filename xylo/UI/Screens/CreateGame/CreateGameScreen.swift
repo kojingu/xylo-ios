@@ -15,7 +15,7 @@ struct CreateGameScreen: View {
         VStack {
             Spacer() 
             EntryField (
-                placeholder: "Enter your nickname",
+                placeholder: "nickname_placeholder",
                 nickname: $viewModel.nickname,
                 prompt: viewModel.nicknamePrompt,
                 isValid: viewModel.validNickname
@@ -23,7 +23,7 @@ struct CreateGameScreen: View {
             .padding()
             
             Stepper(value: $viewModel.rounds, in: 3...20, step: 1) {
-                Text("The game will have \(viewModel.rounds) rounds")
+                Text("rounds_label \(String(viewModel.rounds))")
             }
             .padding(.horizontal)
             
@@ -37,26 +37,6 @@ struct CreateGameScreen: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle(LocalizedStringKey("app_title"))
         
-    }
-}
-
-extension CreateGameScreen {
-    
-    private struct EntryField: View {
-        
-        let placeholder: String
-        let nickname: Binding<String>
-        let prompt: String
-        let isValid: Bool
-        
-        var body: some View {
-            VStack(alignment: .leading) {
-                TextField(placeholder, text: nickname)
-                    .padding()
-                    .border(isValid ? .gray : .red, width: 2)
-                Text(prompt)
-            }
-        }
     }
 }
 

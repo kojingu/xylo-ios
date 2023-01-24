@@ -13,9 +13,9 @@ struct WaitForSonataScreen: View {
     
     var body: some View {
         VStack {
-            Text("\(nickname) is creating a melody for you")
+            Text("creating_sonata \(nickname)")
                 .font(.system(size: 24))
-            Text("Be ready!")
+            Text("be_ready")
                 .font(.system(size: 24))
                 .padding(.vertical, 12)
             ProgressView()

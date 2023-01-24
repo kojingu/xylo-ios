@@ -14,7 +14,7 @@ struct WelcomeScreen: View {
     var body: some View {
         VStack {
             Spacer()
-            Text("Xylo").font(.system(size: 80, weight: .bold, design: .monospaced))
+            Text("app_title").font(.system(size: 80, weight: .bold, design: .monospaced))
             Spacer()
             VStack {
                 Button(LocalizedStringKey("join_friends")) { navigator.goToJoinFriends() }

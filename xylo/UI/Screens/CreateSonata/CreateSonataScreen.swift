@@ -11,7 +11,7 @@ struct CreateSonataScreen: View {
     var body: some View {
         VStack {
             Spacer()
-            Text("Challenge your friends with a random song!")
+            Text("challenge_your_friends")
                 .padding()
             Spacer()
             Spacer()

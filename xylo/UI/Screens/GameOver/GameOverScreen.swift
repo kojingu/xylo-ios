@@ -17,11 +17,11 @@ struct GameOverScreen: View {
             Spacer()
             
             if(won) {
-                Text("YOU HAVE WON :D")
+                Text("you_win")
                     .font(.system(size: 36))
                     .bold()
             } else {
-                Text("YOU HAVE LOST :(")
+                Text("you_lose")
                     .font(.system(size: 36))
                     .bold()
             }

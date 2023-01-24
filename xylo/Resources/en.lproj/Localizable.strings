@@ -16,3 +16,27 @@
 "G_KEY" = "G";
 
 "start_hunger_games" = "Let the hunger games begin!";
+
+"see_final_score" = "See final score";
+"start_new_game" = "Start new game";
+
+"you_win" = "YOU HAVE WON :D";
+"you_lose" = "YOU HAVE LOST :(";
+
+"nobody_guessed_sonata" = "Nobody decoded the song";
+"round_winner %@" = "%@ is a total Mozart!";
+"rounds_left %@" = "%@ rouds left";
+"next_round_counter_label" = "Next round in";
+
+"discover_sonata_title" = "Discover your friend Sonata!";
+"countdown_label %@" = "You have %@ seconds left to guess";
+"try_it_out" = "Try it out";
+
+"creating_sonata %@" = "%@ is creating a melody for you";
+"be_ready" = "Be ready!";
+
+"challenge_your_friends" = "Challenge your friends with a random song!";
+
+"nickname_placeholder" = "Enter your nickname";
+"roomcode_placeholder" = "Enter the room code (ask your friend)";
+"rounds_label %@" = "The game will have %@ rounds";

@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct GuessSonataScreen: View {
+    
+    private let secondsLeft = 3
+    
     var body: some View {
         VStack {
-            Text("Discover your friend Sonata!")
+            Text("discover_sonata_title")
                 .font(.system(size: 16))
             
             Image(systemName: "music.quarternote.3")
@@ -45,9 +48,9 @@ struct GuessSonataScreen: View {
 
                 
             }
-            Text("You have 20 seconds left to guess")            
+            Text("countdown_label \(String(secondsLeft))")
             Spacer()
-            PurpleButton(textKey: "Try it out") {
+            PurpleButton(textKey: "try_it_out") {
                 // TODO
             }.padding()
         }
