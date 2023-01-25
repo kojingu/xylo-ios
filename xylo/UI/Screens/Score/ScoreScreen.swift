@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ScoreScreen: View {
     
-    let scoreboard: ScoreBoard
+    @ObservedObject private (set) var viewModel: ScoreViewModel
     
     var body: some View {
         VStack {
             
             Spacer()
             
-            ScoreTable(scoreboard: scoreboard)
+            ScoreTable(scoreboard: viewModel.scoreboard)
             
             Spacer()
             
@@ -37,7 +37,11 @@ struct ScoreScreen: View {
 struct ScoreScreen_Previews: PreviewProvider {
     static var previews: some View {
         ScoreScreen(
-            scoreboard: ScoreBoard(scores: ["PEPA": 1, "PEPE": 0, "PIPO": 0])
+            viewModel: .init(
+                scoreboard: ScoreBoard(
+                    scores: ["PEPA": 1, "PEPE": 0, "PIPO": 0]
+                )
+            )
         )
     }
 }

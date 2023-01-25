@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     
-    let navigator: Navigator
+    @ObservedObject private (set) var viewModel: WelcomeViewModel
     
     var body: some View {
         VStack {
@@ -17,14 +17,14 @@ struct WelcomeScreen: View {
             Text("app_title").font(.system(size: 80, weight: .bold, design: .monospaced))
             Spacer()
             VStack {
-                Button(LocalizedStringKey("join_friends")) { navigator.goToJoinFriends() }
+                Button(LocalizedStringKey("join_friends")) { viewModel.goToJoinFriends() }
                     .font(.callout)
                     .padding(.all)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .background(Color.purple)
                 
-                BorderedPurpleButton(textKey: "create_game") { navigator.goToCreateGame() }
+                BorderedPurpleButton(textKey: "create_game") { viewModel.goToCreateGame() }
             }
             .frame(maxWidth: .infinity)
             .padding(.all)
@@ -36,6 +36,6 @@ struct WelcomeScreen: View {
 
 struct WelcomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeScreen(navigator: Navigator())
+        WelcomeScreen(viewModel: .init(navigator: Navigator()))
     }
 }

@@ -54,6 +54,14 @@
 		CACF2509297B7B580077B66E /* ScoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2508297B7B580077B66E /* ScoreScreen.swift */; };
 		CACF250B297B7C350077B66E /* EntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF250A297B7C350077B66E /* EntryField.swift */; };
 		CADE3D61297F6CF800710AAC /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = CADE3D60297F6CF800710AAC /* Localizable.stringsdict */; };
+		CADE3D632980CA2700710AAC /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D622980CA2700710AAC /* ScoreViewModel.swift */; };
+		CADE3D652980CB5E00710AAC /* GameOverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D642980CB5E00710AAC /* GameOverViewModel.swift */; };
+		CADE3D672980CC1000710AAC /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D662980CC1000710AAC /* CountdownViewModel.swift */; };
+		CADE3D692980CD1100710AAC /* GuessSonataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D682980CD1100710AAC /* GuessSonataViewModel.swift */; };
+		CADE3D6B2980CF4000710AAC /* WaitForSonataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D6A2980CF4000710AAC /* WaitForSonataViewModel.swift */; };
+		CADE3D6D2980CFE800710AAC /* CreateSonataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D6C2980CFE800710AAC /* CreateSonataViewModel.swift */; };
+		CADE3D6F2980D07000710AAC /* JoinFriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D6E2980D07000710AAC /* JoinFriendsViewModel.swift */; };
+		CADE3D712980D14700710AAC /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE3D702980D14700710AAC /* WelcomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +131,14 @@
 		CACF2508297B7B580077B66E /* ScoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreScreen.swift; sourceTree = "<group>"; };
 		CACF250A297B7C350077B66E /* EntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryField.swift; sourceTree = "<group>"; };
 		CADE3D60297F6CF800710AAC /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		CADE3D622980CA2700710AAC /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		CADE3D642980CB5E00710AAC /* GameOverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewModel.swift; sourceTree = "<group>"; };
+		CADE3D662980CC1000710AAC /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
+		CADE3D682980CD1100710AAC /* GuessSonataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessSonataViewModel.swift; sourceTree = "<group>"; };
+		CADE3D6A2980CF4000710AAC /* WaitForSonataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitForSonataViewModel.swift; sourceTree = "<group>"; };
+		CADE3D6C2980CFE800710AAC /* CreateSonataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSonataViewModel.swift; sourceTree = "<group>"; };
+		CADE3D6E2980D07000710AAC /* JoinFriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFriendsViewModel.swift; sourceTree = "<group>"; };
+		CADE3D702980D14700710AAC /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0192E32955268200499A7D /* WelcomeScreen.swift */,
+				CADE3D702980D14700710AAC /* WelcomeViewModel.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -338,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0192F429567AF800499A7D /* JoinFriendsScreen.swift */,
+				CADE3D6E2980D07000710AAC /* JoinFriendsViewModel.swift */,
 			);
 			path = JoinFriends;
 			sourceTree = "<group>";
@@ -346,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				CA96C6782974A06B008169B5 /* CreateSonataScreen.swift */,
+				CADE3D6C2980CFE800710AAC /* CreateSonataViewModel.swift */,
 			);
 			path = CreateSonata;
 			sourceTree = "<group>";
@@ -378,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF24F5297B609E0077B66E /* WaitForSonataScreen.swift */,
+				CADE3D6A2980CF4000710AAC /* WaitForSonataViewModel.swift */,
 			);
 			path = WaitForSonata;
 			sourceTree = "<group>";
@@ -386,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF24F8297B62820077B66E /* GuessSonataScreen.swift */,
+				CADE3D682980CD1100710AAC /* GuessSonataViewModel.swift */,
 			);
 			path = GuessSonata;
 			sourceTree = "<group>";
@@ -394,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF24FB297B73CB0077B66E /* CountdownScreen.swift */,
+				CADE3D662980CC1000710AAC /* CountdownViewModel.swift */,
 			);
 			path = Countdown;
 			sourceTree = "<group>";
@@ -402,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF2501297B79050077B66E /* GameOverScreen.swift */,
+				CADE3D642980CB5E00710AAC /* GameOverViewModel.swift */,
 			);
 			path = GameOver;
 			sourceTree = "<group>";
@@ -410,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF2508297B7B580077B66E /* ScoreScreen.swift */,
+				CADE3D622980CA2700710AAC /* ScoreViewModel.swift */,
 			);
 			path = Score;
 			sourceTree = "<group>";
@@ -563,6 +587,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADE3D6F2980D07000710AAC /* JoinFriendsViewModel.swift in Sources */,
+				CADE3D6D2980CFE800710AAC /* CreateSonataViewModel.swift in Sources */,
 				CA2A895A295768D100CC5DA4 /* PurpleButton.swift in Sources */,
 				CA8359D629736FFD00A7E0B1 /* ServicesModule.swift in Sources */,
 				CA96C67E2974A2FC008169B5 /* Note.swift in Sources */,
@@ -570,6 +596,7 @@
 				CACF24FC297B73CB0077B66E /* CountdownScreen.swift in Sources */,
 				CA49256A294BDB55008D3DBC /* Persistence.swift in Sources */,
 				CA49256D294BDB55008D3DBC /* xylo.xcdatamodeld in Sources */,
+				CADE3D672980CC1000710AAC /* CountdownViewModel.swift in Sources */,
 				CACF24FE297B757C0077B66E /* ScoreBoard.swift in Sources */,
 				CA8359DE29737AAB00A7E0B1 /* InviteFriendsScreen.swift in Sources */,
 				CA8359D9297372E600A7E0B1 /* SocketIoModule.swift in Sources */,
@@ -577,15 +604,20 @@
 				CA2A89562957634A00CC5DA4 /* BorderedPurpleButton.swift in Sources */,
 				CA96C6802974A854008169B5 /* XyloView.swift in Sources */,
 				CA96C67B2974A1E8008169B5 /* NoteButton.swift in Sources */,
+				CADE3D712980D14700710AAC /* WelcomeViewModel.swift in Sources */,
 				CACF24F6297B609E0077B66E /* WaitForSonataScreen.swift in Sources */,
 				CA8359E029737B6C00A7E0B1 /* InviteFriendsViewModel.swift in Sources */,
 				CA0192E42955268200499A7D /* WelcomeScreen.swift in Sources */,
 				CACF24F9297B62820077B66E /* GuessSonataScreen.swift in Sources */,
 				CACF2502297B79050077B66E /* GameOverScreen.swift in Sources */,
 				CA492563294BDB54008D3DBC /* ContentView.swift in Sources */,
+				CADE3D652980CB5E00710AAC /* GameOverViewModel.swift in Sources */,
+				CADE3D692980CD1100710AAC /* GuessSonataViewModel.swift in Sources */,
+				CADE3D6B2980CF4000710AAC /* WaitForSonataViewModel.swift in Sources */,
 				CACF2509297B7B580077B66E /* ScoreScreen.swift in Sources */,
 				CA8359E329738D2000A7E0B1 /* Navigator.swift in Sources */,
 				CA492561294BDB54008D3DBC /* xyloApp.swift in Sources */,
+				CADE3D632980CA2700710AAC /* ScoreViewModel.swift in Sources */,
 				CA8359DB2973763100A7E0B1 /* DependencyContainer.swift in Sources */,
 				CA8359D2297369BA00A7E0B1 /* DependencyInjector.swift in Sources */,
 				CACF250B297B7C350077B66E /* EntryField.swift in Sources */,

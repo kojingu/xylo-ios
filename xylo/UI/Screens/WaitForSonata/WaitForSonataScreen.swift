@@ -9,11 +9,11 @@ import SwiftUI
 
 struct WaitForSonataScreen: View {
     
-    let nickname: String
+    @ObservedObject private (set) var viewModel: WaitForSonataViewModel
     
     var body: some View {
         VStack {
-            Text("creating_sonata \(nickname)")
+            Text("creating_sonata \(viewModel.nickname)")
                 .font(.system(size: 24))
             Text("be_ready")
                 .font(.system(size: 24))
@@ -27,6 +27,8 @@ struct WaitForSonataScreen: View {
 
 struct WaitForSonataScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WaitForSonataScreen(nickname: "CARL")
+        WaitForSonataScreen(
+            viewModel: .init(nickname: "CARL")
+        )
     }
 }

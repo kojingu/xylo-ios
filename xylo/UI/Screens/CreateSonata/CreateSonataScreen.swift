@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CreateSonataScreen: View {
+    
+    private (set) var viewModel: CreateSonataViewModel
+    
     var body: some View {
         VStack {
             Spacer()
@@ -28,6 +31,8 @@ struct CreateSonataScreen: View {
 
 struct CreateSonataScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CreateSonataScreen()
+        CreateSonataScreen(
+            viewModel: .init()
+        )
     }
 }

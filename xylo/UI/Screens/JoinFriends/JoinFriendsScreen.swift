@@ -9,13 +9,7 @@ import SwiftUI
 
 struct JoinFriendsScreen: View {
     
-    @State var nickname: String = ""
-    var nicknamePrompt: String = ""
-    var isValidNickname: Bool = true
-    
-    @State var roomcode: String = ""
-    var roomcodePrompt: String = ""
-    var isValidRoomcodePrompt: Bool = true
+    @ObservedObject private (set) var viewModel: JoinFriendsViewModel
     
     var body: some View {
         VStack {
@@ -23,8 +17,18 @@ struct JoinFriendsScreen: View {
             Spacer()
             
             Group {
-                EntryField(placeholder: "nickname_placeholder", nickname: $nickname, prompt: nicknamePrompt, isValid: isValidNickname)
-                EntryField(placeholder: "roomcode_placeholder", nickname: $roomcode, prompt: roomcodePrompt, isValid: isValidRoomcodePrompt)
+                EntryField(
+                    placeholder: "nickname_placeholder",
+                    nickname: $viewModel.nickname,
+                    prompt: viewModel.nicknamePrompt,
+                    isValid: viewModel.isValidNickname
+                )
+                EntryField(
+                    placeholder: "roomcode_placeholder",
+                    nickname: $viewModel.roomcode,
+                    prompt: viewModel.roomcodePrompt,
+                    isValid: viewModel.isValidRoomcodePrompt
+                )
             }
             
             Spacer()
@@ -40,6 +44,6 @@ struct JoinFriendsScreen: View {
 
 struct JoinFriendsScreen_Previews: PreviewProvider {
     static var previews: some View {
-        JoinFriendsScreen()
+        JoinFriendsScreen(viewModel: .init())
     }
 }

@@ -9,14 +9,14 @@ import SwiftUI
 
 struct GameOverScreen: View {
     
-    let won: Bool
+    @ObservedObject private (set) var viewModel: GameOverViewModel
     
     var body: some View {
         VStack {
             
             Spacer()
             
-            if(won) {
+            if(viewModel.won) {
                 Text("you_win")
                     .font(.system(size: 36))
                     .bold()
@@ -44,6 +44,6 @@ struct GameOverScreen: View {
 
 struct GameOverScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GameOverScreen(won: true)
+        GameOverScreen(viewModel: .init(won: true))
     }
 }

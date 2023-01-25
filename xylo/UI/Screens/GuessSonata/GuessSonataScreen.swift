@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GuessSonataScreen: View {
     
-    private let secondsLeft = 3
+    @ObservedObject private (set) var viewModel: GuessSonataViewModel
     
     var body: some View {
         VStack {
@@ -48,7 +48,7 @@ struct GuessSonataScreen: View {
 
                 
             }
-            Text("countdown_label \(String(secondsLeft))")
+            Text("countdown_label \(viewModel.secondsLeftStr)")
             Spacer()
             PurpleButton(textKey: "try_it_out") {
                 // TODO
@@ -59,6 +59,8 @@ struct GuessSonataScreen: View {
 
 struct GuessSonataScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GuessSonataScreen()
+        GuessSonataScreen(
+            viewModel: GuessSonataViewModel()
+        )
     }
 }
