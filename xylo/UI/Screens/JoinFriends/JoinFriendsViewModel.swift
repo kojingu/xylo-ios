@@ -9,6 +9,7 @@ import Foundation
 
 class JoinFriendsViewModel: ObservableObject {
     
+    private let navigator: Navigator
     
     @Published var nickname: String = ""
     @Published var roomcode: String = ""
@@ -18,4 +19,8 @@ class JoinFriendsViewModel: ObservableObject {
     
     @Published var isValidNickname: Bool = true
     @Published var isValidRoomcodePrompt: Bool = true
+    
+    init(navigator:Navigator) {
+        self.navigator = navigator
+    }
 }

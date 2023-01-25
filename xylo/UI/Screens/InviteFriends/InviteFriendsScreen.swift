@@ -52,7 +52,7 @@ struct InviteFriendsScreen: View {
 struct InviteFriendsScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            InviteFriendsScreen(viewModel: .init(nickname: "BETOCROD", code: "WXYZ"))
+            InviteFriendsScreen(viewModel: .init(navigator: Navigator(), nickname: "BETOCROD", code: "WXYZ"))
         }
     }
 }

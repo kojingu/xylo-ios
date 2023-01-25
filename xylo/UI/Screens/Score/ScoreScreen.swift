@@ -38,6 +38,7 @@ struct ScoreScreen_Previews: PreviewProvider {
     static var previews: some View {
         ScoreScreen(
             viewModel: .init(
+                navigator: Navigator(),
                 scoreboard: ScoreBoard(
                     scores: ["PEPA": 1, "PEPE": 0, "PIPO": 0]
                 )

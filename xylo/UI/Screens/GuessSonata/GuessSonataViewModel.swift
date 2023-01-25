@@ -9,9 +9,15 @@ import Foundation
 
 class GuessSonataViewModel: ObservableObject {
     
+    private let navigator: Navigator
+    
     @Published var secondsLeft: Int = 6
     
     var secondsLeftStr: String {
         return String(secondsLeft)
+    }
+    
+    init(navigator: Navigator) {
+        self.navigator = navigator
     }
 }

@@ -10,10 +10,10 @@ import SwiftUI
 
 class Navigator: ObservableObject {
     
-    @Published var path = NavigationPath()
+    @Published var path = [Screens]()
     
     func clearStack() {
-        path = NavigationPath()
+        path = [Screens]()
     }
     
     func goToWelcomeScreen() {
@@ -38,9 +38,16 @@ class Navigator: ObservableObject {
             return self
         }
         
+        case scoreScreen
+        case gameOver
+        case countdown
+        case guessSonata
+        case waitForSonata
+        case createSonata
+        case joinFriends
         case welcomeScreen
         case inviteFriends(nickname: String, code: String)
         case createGame
-        case joinFriends
+        
     }
 }

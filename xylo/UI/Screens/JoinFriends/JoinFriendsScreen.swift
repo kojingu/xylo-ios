@@ -44,6 +44,6 @@ struct JoinFriendsScreen: View {
 
 struct JoinFriendsScreen_Previews: PreviewProvider {
     static var previews: some View {
-        JoinFriendsScreen(viewModel: .init())
+        JoinFriendsScreen(viewModel: .init(navigator: Navigator()))
     }
 }

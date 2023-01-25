@@ -32,7 +32,7 @@ struct CreateSonataScreen: View {
 struct CreateSonataScreen_Previews: PreviewProvider {
     static var previews: some View {
         CreateSonataScreen(
-            viewModel: .init()
+            viewModel: .init(navigator: Navigator())
         )
     }
 }

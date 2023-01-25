@@ -9,6 +9,7 @@ import Foundation
 
 class CountdownViewModel: ObservableObject {
     
+    private let navigator: Navigator
     
     let winnerNickname: String
     
@@ -16,7 +17,8 @@ class CountdownViewModel: ObservableObject {
     
     let scoreboard: ScoreBoard
     
-    init(winnerNickname: String, leftRoundsCount: Int, scoreboard: ScoreBoard) {
+    init(navigator: Navigator, winnerNickname: String, leftRoundsCount: Int, scoreboard: ScoreBoard) {
+        self.navigator = navigator
         self.winnerNickname = winnerNickname
         self.leftRoundsCount = leftRoundsCount
         self.scoreboard = scoreboard

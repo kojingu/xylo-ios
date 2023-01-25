@@ -42,6 +42,7 @@ struct CountdownScreen_Previews: PreviewProvider {
     static var previews: some View {
         CountdownScreen(
             viewModel: .init(
+                navigator: Navigator(),
                 winnerNickname: "WINNER",
                 leftRoundsCount: 9,
                 scoreboard: ScoreBoard(scores: ["PEPA": 1, "PEPE": 0, "PIPO": 0])

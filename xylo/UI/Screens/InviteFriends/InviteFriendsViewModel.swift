@@ -9,6 +9,8 @@ import Foundation
 
 class InviteFriendsViewModel: ObservableObject {
     
+    private let navigator: Navigator
+    
     let nickname: String
     let code: String
     let friendsNicknames: [String] = [
@@ -26,7 +28,8 @@ class InviteFriendsViewModel: ObservableObject {
         "MOCK_NICKNAME_12"
     ]
     
-    init(nickname: String, code: String) {
+    init(navigator: Navigator, nickname: String, code: String) {
+        self.navigator = navigator
         self.nickname = nickname
         self.code = code
     }

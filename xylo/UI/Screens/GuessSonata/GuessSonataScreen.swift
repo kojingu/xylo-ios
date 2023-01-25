@@ -60,7 +60,7 @@ struct GuessSonataScreen: View {
 struct GuessSonataScreen_Previews: PreviewProvider {
     static var previews: some View {
         GuessSonataScreen(
-            viewModel: GuessSonataViewModel()
+            viewModel: GuessSonataViewModel(navigator: Navigator())
         )
     }
 }

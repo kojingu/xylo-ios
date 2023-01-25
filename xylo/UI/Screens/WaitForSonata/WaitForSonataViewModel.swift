@@ -9,9 +9,12 @@ import Foundation
 
 class WaitForSonataViewModel: ObservableObject {
     
+    private let navigator: Navigator
+    
     let nickname: String
     
-    init(nickname: String) {
+    init(navigator: Navigator, nickname: String) {        
+        self.navigator = navigator
         self.nickname = nickname
     }
 }

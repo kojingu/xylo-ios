@@ -44,6 +44,6 @@ struct GameOverScreen: View {
 
 struct GameOverScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GameOverScreen(viewModel: .init(won: true))
+        GameOverScreen(viewModel: .init(navigator: Navigator(), won: true))
     }
 }

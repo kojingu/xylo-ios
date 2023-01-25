@@ -9,9 +9,12 @@ import Foundation
 
 class ScoreViewModel: ObservableObject {
     
+    private let navigator: Navigator
+    
     let scoreboard: ScoreBoard
     
-    init(scoreboard: ScoreBoard) {
+    init(navigator: Navigator, scoreboard: ScoreBoard) {
+        self.navigator = navigator
         self.scoreboard = scoreboard
     }
 }

@@ -28,7 +28,7 @@ struct WaitForSonataScreen: View {
 struct WaitForSonataScreen_Previews: PreviewProvider {
     static var previews: some View {
         WaitForSonataScreen(
-            viewModel: .init(nickname: "CARL")
+            viewModel: .init(navigator: Navigator(), nickname: "CARL")
         )
     }
 }

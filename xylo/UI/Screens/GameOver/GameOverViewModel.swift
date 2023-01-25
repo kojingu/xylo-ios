@@ -8,10 +8,13 @@
 import Foundation
 
 class GameOverViewModel: ObservableObject {
+    
+    private let navigator: Navigator
         
     let won: Bool
     
-    init(won: Bool) {
+    init(navigator: Navigator, won: Bool) {
+        self.navigator = navigator
         self.won = won
     }
 }
